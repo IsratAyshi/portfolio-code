@@ -7,6 +7,8 @@
 
 }
 
+/*best practice of design is to design starting from the parent class/tag/id */
+
 /*  shared styles  */
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
@@ -154,7 +156,7 @@ nav .menu a{
     line-height: 30px;
 }
 
-#skills{
+#skills , #resume{
     padding-top: 130px;
 }
 
@@ -200,4 +202,55 @@ nav .menu a{
     font-size: 16px;
     color: #757575;
     line-height: 28px;
+}
+
+/* #resume{
+    padding-top: 130px;
+}  same type code written before so just added this with a ',' */
+
+#resume .resume-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 113px auto 0;
+    /*top margin gap, LR gap, bottom gap*/
+    display: flex;
+    gap: 24px;
+}
+
+.resume-container hr{
+    margin: 30px 0;
+    color: #757575;
+}
+
+.resume-container .section-title{
+    color:#474747;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.resume-card{
+    max-width: 511px;
+    margin-right: 47px;
+}
+
+.resume-card .card-title{
+    font-size: 25px;
+    font-weight: bold; /*amneo h3 use kora, so optional*/
+    margin-bottom: 10px;
+    color:#474747;
+}
+
+.resume-card .card-info{
+    font-size: 20px;
+    font-weight: 600; /*semibold*/
+    margin-bottom: 20px;
+    color:#757575;
+
+}
+
+.resume-card .card-text{
+    font-size: 16px;
+    line-height: 28px;
+    color:#757575;
+
 }
